@@ -1,0 +1,87 @@
+<html>
+   <head>
+         <title>Media Queries </title>
+         <style>
+                  nav {
+            color: white;
+            padding: 10px;
+        }
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+        nav ul li {
+            display: inline;
+            margin-right: 20px;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+        }
+        nav ul li a:hover {
+            text-decoration:underline;
+        }
+
+        @media screen and (min-width:0px ) and (max-width:319px) {
+
+body {
+     background-image:url("mobile.jpg");
+}
+}
+                  
+                  @media screen and (min-width:320px )and (max-width:600px){
+
+                         body {
+                              background-image:url("mobile3.jpg");
+                         }
+                  }
+     /*  Tablet,ipad      */    
+                  
+                    @media Screen and (min-width:600px) and (max-width:800px){
+                        body {
+                              background-image: url("mobile2.jpg");
+                        }
+                    }
+               
+                  /* Desktops and Laptops asfsdf     */    
+                  
+                  @media Screen and (min-width:800px) {
+                        body {
+                              background-image: url("plane.jpg");
+                        }
+                    }
+
+
+                    h1{
+                        color: white;
+                        text-decoration: underline;
+                    }
+                    p{
+                        color: white;
+                        font-family: Arial, Helvetica, sans-serif;
+                        font-size: x-large;
+                    }
+         </style>
+
+   </head>
+   <body>
+      <nav>
+            <ul>
+                <li><a href="Home.html">Home</a></li>
+                <li><a href="About.html">About</a></li>
+                <li><a href="Services.html">Services</a></li>
+                <li><a href="RegisterationPage.html">Register</a></li>
+                <li><a href="LoginPage.html">Login</a></li>
+                <li><a href="Contactus.html">Contact</a></li>
+            </ul>
+        </nav>
+        <h1>Media Queries</h1>
+         
+            <p>Media queries in CSS3 extended the CSS2 media types idea: Instead of looking for a type of device, they look at the capability of the device.
+                <br>
+                The result of the query is true if the specified media type matches the type of device the document is being displayed on and all media features in the media query are true. When a media query is true, the corresponding style sheet or style rules are applied, following the normal cascading rules.
+            </p>
+     
+   </body>
+</html>
